@@ -1,6 +1,6 @@
 from django.contrib import admin
-
-from movies.models import Movie
-
-# Register your models here.
-admin.site.register(Movie)
+from .models import Movie
+class MovieAdmin(admin.ModelAdmin):
+    ordering = ['name']
+    search_fields = ['name']
+admin.site.register(Movie, MovieAdmin)
