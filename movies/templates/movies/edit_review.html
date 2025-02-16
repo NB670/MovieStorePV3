@@ -1,22 +1,23 @@
 {% extends 'base.html' %}
 {% block content %}
-<div class="p-3">
+<div class="p-5">
   <div class="container">
     <div class="row mt-3">
-      <div class="col mx-auto mb-3">
-        <h2>Edit Review</h2>
-        <hr />
+      <div class="col-md-8 mx-auto mb-4">
+        <h2 class="text-center">Edit Review</h2>
+        <hr class="my-4" />
         <form method="POST">
           {% csrf_token %}
-          <p>
-            <label for="comment">Comment:</label>
-            <textarea name="comment" required
-            class="form-control" id="comment">{{template_data.review.comment }}</textarea>
-          </p>
-          <div class="text-start">
-            <button type="submit"
-              class="btn bg-dark text-white">Edit Review
-            </button>
+          
+          <!-- Comment Input -->
+          <div class="mb-3">
+            <label for="comment" class="form-label">Comment:</label>
+            <textarea name="comment" required class="form-control" id="comment" rows="5">{{ template_data.review.comment }}</textarea>
+          </div>
+          
+          <!-- Submit Button -->
+          <div class="text-end">
+            <button type="submit" class="btn btn-dark px-4 py-2">Edit Review</button>
           </div>
         </form>
       </div>
