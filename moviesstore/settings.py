@@ -127,5 +127,5 @@ EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_HOST_USER = 'tonyzhou.mp@gmail.com'  # Your Gmail address
-EMAIL_HOST_PASSWORD = 'zmja liwu uivg qyse'  # The App Password you just generated
+EMAIL_HOST_PASSWORD = 'tiog yqlt fkdc wlwr'  # The App Password you just generated
 DEFAULT_FROM_EMAIL = 'tonyzhou.mp@gmail.com'
